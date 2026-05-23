@@ -20,4 +20,8 @@ jobs:
       - name: Fetch papers and create issues
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: uv run python -m src.main
+          ARXIV_USER_AGENT: "Mozilla/5.0 (Windows NT 10.0; Win64; x64） AppleWebKit/537.36"
+        run: 
+          uv sync
+          uv run python -m src.main --delay 2 --retry 3 --timeout 10
+          
