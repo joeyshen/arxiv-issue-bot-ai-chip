@@ -1,19 +1,19 @@
 # arXiv categories to monitor
 # Full list: https://arxiv.org/category_taxonomy
 categories:
+  - cs.AR
   - cs.AI
-  - cs.SE
 
 # Optional keyword filters (applied to title + abstract)
 # If empty or omitted, ALL papers in the categories above are posted.
 # Papers matching ANY keyword are included.
 keywords:
   - "large language model"
-  - "transformer"
-  - "refactoring"
-  - "agent"
-  - "bug"
-  - "defect"
+  - "transformer accelerator"
+  - "AI hardware"
+  - "LLM hardware"
+  - "PIM"
+  - "PNM"
 
 # Maximum number of papers to fetch per category per run
 max_results_per_category: 50
